@@ -84,6 +84,12 @@ export const BannerContainer = styled.div`
   }
 
   @media screen and (max-width: 450px) {
+    height: 250px;
+
+    .homeBannerText {
+      margin-top: 29px;
+    }
+
     .homeBannerText h2 {
       font-size: 30px;
       font-weight: 500;
@@ -105,7 +111,7 @@ export const BannerContainer = styled.div`
     }
 
     .homeBannerWrap {
-    margin-top: 40px;
-}
+      margin-top: 40px;
+    }
   }
-`
+`;

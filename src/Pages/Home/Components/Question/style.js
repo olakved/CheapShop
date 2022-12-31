@@ -4,9 +4,10 @@ export const HomeQuestionWrapper = styled.div`
 margin-top: 30px;
 width: 100%;
 /* background-color: grey; */
-height: 300px;
+height: auto;
 padding: 30px 40px;
 border-top: 1px solid rgb(56,1,56);
+margin-bottom: 30px;
 
 .questionWrap{
     
@@ -58,4 +59,35 @@ font-size: 20px;
 .queLineB p{
 font-size: 13px;
 }
+
+
+@media screen and (max-width: 768px) {
+    padding: 30px 24px;
+
+    .questionSection {
+    margin-left: 7px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    padding: 30px 24px;
+
+    .questionSection {
+    margin-left: 7px;
+    }
+
+    .questionSection {
+    flex-direction: column;
+    gap: 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
 `

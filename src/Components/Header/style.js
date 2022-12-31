@@ -106,6 +106,9 @@ export const HeaderWrapper = styled.header`
     .headerwrap {
       margin-top: 20px;
     }
+    .navMenu{
+      gap: 10px;
+    }
   }
 
   @media screen and (max-width: 350px) {
@@ -115,8 +118,11 @@ export const HeaderWrapper = styled.header`
 
     .navMenuBtn {
       padding: 5px;
-      width: 70px;
-      font-size: 10px;
+      width: 48px;
+      font-size: 12px;
+    }
+    .navLink {
+      font-size: 12px;
     }
   }
 `;

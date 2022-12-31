@@ -31,7 +31,7 @@ function ProductSection() {
           <p><Link to='/product'><FaChevronCircleRight size={20}/></Link></p>
         </div>
         <div className="productWrap">
-          {products?.slice(0, 6).map((items) => (
+          {products?.slice(0, 8).map((items) => (
             <div key={items?.id}>
               <h1>
                 <ProductCard items={items} />

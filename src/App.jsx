@@ -4,6 +4,7 @@ import HomePage from "./Pages/Home";
 import NewsPage from "./Pages/News";
 import PersonPage from "./Pages/smallApp";
 import ProductPage from "./Pages/Product";
+import CountryPage from "./Pages/Countries";
 import './index.css'
 
 import LayoutWrapper from "./utils/WebWrapper";
@@ -16,6 +17,7 @@ function App() {
           <Route path="/news" element={<NewsPage />} />
           <Route path="/person" element={<PersonPage />} />
           <Route path="/product" element={<ProductPage />} />
+          <Route path="/countries" element={<CountryPage />} />
         </Routes>
     </LayoutWrapper>
   );

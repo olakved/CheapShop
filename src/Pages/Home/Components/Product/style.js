@@ -12,7 +12,7 @@ export const ProductStyle = styled.div`
     display: flex;
     justify-content: space-between;
     height: 40px;
-    padding: 10px 30px;
+    padding: 10px 60px;
     text-align: center;
     margin: 0px 150px 0px;
     background-color: lightgray;
