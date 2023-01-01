@@ -3,4 +3,4 @@
 
 CheapShop is a simple e-commerce web app.
 
-NOTE: This project was created for learning purpose
+NOTE: This project was created for learning purpose especially Data Fetching
