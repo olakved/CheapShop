@@ -52,31 +52,32 @@ export const CountryWrapper = styled.div`
     border-top: 2px solid rgb(56, 1, 56);
   }
 
-  .countryInfoRow {
-    display: flex;
+  .countryInfoColumn {
+    /* display: flex; */
     padding: 5px;
     text-align: left;
   }
 
-  .infoLeft {
-    width: 47%;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+  .infoRow:nth-child(even){
+    background-color: lightgray;
   }
 
-  .infoRight {
-    width: 53%;
+  .infoRow{
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    /* justify-content: space-evenly; */
+    text-align: left;
+    margin-bottom: 10px;
+    padding: 5px 0px;
   }
 
   .infoItems {
+    width: 47%;
     font-weight: 600;
   }
 
   .infoValue {
-    /* font-size: 13px; */
+    font-size: 15px;
+    width: 53%;
+    text-align: left;
   }
 `;

@@ -1,75 +1,81 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import CountryCard from "./Components/countryCard";
 import { CountryWrapper } from "./style";
 // import CountryCard from "./Components/countryCard";
 
-const url = "https://restcountries.com/v3.1/all";
+// const url = "https://restcountries.com/v3.1/all";
 
 function CountryPage() {
-  // const [countryData, setCountryData] = useState();
-
-  // const fetchApi = async () => {
-  //     const data = await (await fetch(url)).json();
-  //     setCountryData(data);
-  // };
+  
+  // const [countryData, setCountryData] = useState([]);
 
   // useEffect(() => {
-  //     fetchApi();
+  //   const controller = new AbortController();
+  //   const signal = controller.signal;
+  //   const fetchAPI = async () => {
+  //     const data = await (await fetch(url, { signal })).json();
+  //     setCountryData(data);
+  //   };
+
+  //   fetchAPI();
+
+  //   return () => controller.abort();
   // }, []);
-  const [countryData, setCountryData] = useState([]);
 
-  useEffect(() => {
-    const controller = new AbortController();
-    const signal = controller.signal;
-    const fetchAPI = async () => {
-      const data = await (await fetch(url, { signal })).json();
-      setCountryData(data);
-    };
-
-    fetchAPI();
-
-    return () => controller.abort();
-  }, []);
-
-  console.log(countryData);
+  // console.log(countryData);
 
   return (
     <CountryWrapper>
-      <div className="countryContainer">
+      <CountryCard />
+      {/* <div className="countryContainer">
         <div className="countryWrap">
           {countryData.map((item, index) => (
             <div className="countryCard" key={index}>
               <div className="countryFlagWrap">
-                <img src={item.flags.png} alt="" />
+                <a href={item.maps.googleMaps} target='_blank'>
+                <img src={item.flags.png} alt="Flag" />
+                </a>
               </div>
               <div className="countryCardInfo">
                 <h2>{item.name.common}</h2>
                 <div className="countryInfo">
-                  <div className="countryInfoRow">
-                    <p className="infoLeft">
-                      <span className="infoItems">Capital</span>
-                      <span className="infoItems">Population</span>
-                      <span className="infoItems">Continent</span>
-                      <span className="infoItems">Time Zone</span>
-                      <span className="infoItems">Region</span>
-                      <span className="infoItems">Short Name</span>
-                      <span className="infoItems">First Day</span>
-                    </p>
-                    <p className="infoRight">
-                      <span className="infoValue">{item.capital}</span>
-                      <span className="infoValue">{item.population}</span>
-                      <span className="infoValue">{item.continents}</span>
-                      <span className="infoValue">{item.timezones[0]}</span>
-                      <span className="infoValue">{item.region}</span>
-                      <span className="infoValue">{item.fifa}</span>
-                      <span className="infoValue">{item.startOfWeek}</span>
-                    </p>
+                  <div className="countryInfoColumn">
+                    <div className="infoRow">
+                      <p className="infoItems">Capital</p>
+                      <p className="infoValue">{item.capital}</p>                      
+                    </div>
+                    <div className="infoRow">
+                      <p className="infoItems">Population</p>
+                      <p className="infoValue">{item.population}</p>                      
+                    </div>
+                    <div className="infoRow">
+                      <p className="infoItems">Continent</p>
+                      <p className="infoValue">{item.continents}</p>                      
+                    </div>
+                    <div className="infoRow">
+                      <p className="infoItems">Timezone</p>
+                      <p className="infoValue">{item.timezones[0]}</p>                      
+                    </div>
+                    <div className="infoRow">
+                      <p className="infoItems">Region</p>
+                      <p className="infoValue">{item.region}</p>                      
+                    </div>
+                    <div className="infoRow">
+                      <p className="infoItems">Short Name</p>
+                      <p className="infoValue">{item.fifa}</p>                      
+                    </div>
+                    <div className="infoRow">
+                      <p className="infoItems">First Day</p>
+                      <p className="infoValue">{item.startOfWeek}</p>                      
+                    </div>
+                    
                   </div>
                 </div>
               </div>
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </CountryWrapper>
   );
 }
