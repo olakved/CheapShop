@@ -27,15 +27,15 @@ export const CountryWrapper = styled.div`
   }
 
   .countryFlagWrap {
-    height: 180px;
+    /* height: 180px; */
     overflow: hidden;
     margin-bottom: 10px;
   }
 
   .countryFlagWrap img {
     width: 100%;
-    height: 100%;
-    /* object-fit: contain; */
+    height: 150px;
+    object-fit: cover;
   }
 
   .countryCardInfo {
