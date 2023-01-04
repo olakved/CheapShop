@@ -31,7 +31,7 @@ function CountryCard(data) {
             <div className="countryCard" key={index}>
               <div className="countryFlagWrap">
                 <a href={item.maps.googleMaps} target='_blank'>
-                <img src={item.flags.png} alt="Flag" />
+                <img src={item.flags.png} alt="Flag" className="flagImg" />
                 </a>
               </div>
               <div className="countryCardInfo">

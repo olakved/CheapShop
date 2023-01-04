@@ -19,5 +19,10 @@ export const headerData = [
         linkTitle: 'Country'
     },
 
+    {
+        path: '/breweries',
+        linkTitle: 'Breweries'
+    },
+
 ]
 

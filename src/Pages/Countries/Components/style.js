@@ -36,6 +36,11 @@ width: 100%;
     width: 100%;
     height: 100%;
     /* object-fit: contain; */
+    transition: transform .2s;
+  }
+
+  .flagImg:hover{
+    transform: scale(1.2);
   }
 
   .countryCardInfo {
