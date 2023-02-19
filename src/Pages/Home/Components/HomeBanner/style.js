@@ -10,7 +10,8 @@ export const BannerContainer = styled.div`
     ),
     url("https://images.unsplash.com/photo-1615655406736-b37c4fabf923?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60");
   background-position: center;
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   margin-top: 100px;
   overflow: hidden;

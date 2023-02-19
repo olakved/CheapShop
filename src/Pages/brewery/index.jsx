@@ -1,13 +1,15 @@
 import React from 'react'
 import { BreweryContainer } from './style'
-import BreweryCard from './breweryCard'
+import BreweryCard from './component/breweryCard';
+
 
 function BreweryPage() {
+
   return (
     <BreweryContainer>
-    <div>
+      <div className='breweryContent'>
         <BreweryCard />
-    </div>
+      </div>
     </BreweryContainer>
   )
 }

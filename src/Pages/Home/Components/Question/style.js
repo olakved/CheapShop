@@ -1,45 +1,48 @@
 import styled from "styled-components";
 
 export const HomeQuestionWrapper = styled.div`
-margin-top: 30px;
-width: 100%;
-/* background-color: grey; */
-height: auto;
-padding: 30px 40px;
-border-top: 1px solid rgb(56,1,56);
-margin-bottom: 30px;
+  margin-top: 30px;
+  width: 100%;
+  /* background-color: grey; */
+  height: auto;
+  padding: 30px 40px;
+  border-top: 1px solid rgb(56, 1, 56);
+  margin-bottom: 30px;
 
-.questionWrap{
-    
+  .questionWrap {
     /* background-color: lightgray; */
-}
+  }
 
-.queSecTitle{
+  .queSecTitle {
     margin-bottom: 20px;
-    color: rgb(56,1,56);
-}
+    color: rgb(56, 1, 56);
+  }
 
-.questionSection{
+  .questionSection {
     margin-left: 20px;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     gap: 30px;
-}
+  }
 
-.queColumn{
+  .queColumn {
     padding: 0px 10px;
-}
+  }
 
-.queLine1{
-  margin-bottom: 20px;
-}
+  .queLine1 {
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  }
 
-.queLine1{
+  .queLine1 {
     display: flex;
     gap: 10px;
-}
+  }
 
-.queLine1A{
+  .queLine1A {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,44 +53,34 @@ margin-bottom: 30px;
     background-color: purple;
     text-align: center;
     margin-top: 5px;
-}
+  }
 
-.queLineB h2{
-font-size: 20px;
-}
+  .queLineB h2 {
+    font-size: 20px;
+  }
 
-.queLineB p{
-font-size: 13px;
-}
+  .queLineB p {
+    font-size: 13px;
+  }
 
-
-@media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     padding: 30px 24px;
 
     .questionSection {
-    margin-left: 7px;
+      margin-left: 7px;
     }
-}
+  }
 
-@media screen and (max-width: 450px) {
+  @media screen and (max-width: 450px) {
     padding: 30px 24px;
 
     .questionSection {
-    margin-left: 7px;
+      margin-left: 7px;
     }
 
     .questionSection {
-    flex-direction: column;
-    gap: 0px;
+      flex-direction: column;
+      gap: 0px;
     }
-}
-
-
-
-
-
-
-
-
-
-`
+  }
+`;

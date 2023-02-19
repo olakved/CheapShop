@@ -129,6 +129,18 @@ export const ProductStyle = styled.div`
     margin-bottom: 5px;
   }
 
+  .productDetailsArrow {
+    border-radius: 100%;
+    padding: 5px;
+    color: lightgray;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  }
+
+  #poArrow {
+    align-self: center;
+  }
+
   .productMoreDetails {
     padding: 10px;
     font-size: 12px;
@@ -232,16 +244,16 @@ export const ProductStyle = styled.div`
     }
 
     .cartItems button {
-    width: 40%;
-    height: 30px;
-    padding: 2px;
-    font-size: 8px;
-}
+      width: 40%;
+      height: 30px;
+      padding: 2px;
+      font-size: 8px;
+    }
 
-.pocoIcon{
-  width: 15px;
-  height: 15px;
-  margin-bottom: 8px;
-}
+    .pocoIcon {
+      width: 15px;
+      height: 15px;
+      margin-bottom: 8px;
+    }
   }
 `;
