@@ -1,17 +1,14 @@
-import React from 'react'
-import { BreweryContainer } from './style'
-import BreweryCard from './component/breweryCard';
-
+import React from "react";
+import { BreweryContainer } from "./style";
+import BreweryCard from "./component/breweryCard";
+import CustomFetch from "../../utils/customFetch";
 
 function BreweryPage() {
-
   return (
     <BreweryContainer>
-      <div className='breweryContent'>
-        <BreweryCard />
-      </div>
+      <BreweryCard />
     </BreweryContainer>
-  )
+  );
 }
 
-export default BreweryPage
+export default BreweryPage;

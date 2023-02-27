@@ -1,29 +1,26 @@
 import styled from "styled-components";
 
 export const BrewCardWrap = styled.div`
-background-color: pink;
-width: 200px;
-padding: 10px;
+  width: 100%;
+  /* padding: 10px; */
+  background-color: white;
 
-.brewWrap{
-    background-color: white;
-    
-}
+  .brewWrap {
+    padding: 30px;
+  }
 
-.cardRow{
-    padding: 5px;
+  .cardRow {
+    padding: 10px;
     display: flex;
     justify-content: space-between;
-    text-align: left;
     align-items: center;
-}
+  }
 
-.cardRow h1{
+  .cardRow h1 {
     font-size: 15px;
-}
+  }
 
-.cardRow p{
+  .cardRow p {
     font-size: 15px;
-}
-
-`
+  }
+`;

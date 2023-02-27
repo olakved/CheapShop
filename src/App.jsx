@@ -10,6 +10,7 @@ import ErrorPage from "./Pages/error";
 import "./index.css";
 
 import LayoutWrapper from "./utils/WebWrapper";
+import ApiTest from "./Components/CountriesComp/Components/testNews";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/product" element={<ProductPage />} />
         <Route path="/countries" element={<CountryPage />} />
         <Route path="/breweries" element={<BreweryPage />} />
+        <Route path="/test" element={<ApiTest />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </LayoutWrapper>
